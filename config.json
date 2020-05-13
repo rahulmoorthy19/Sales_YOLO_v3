@@ -1,0 +1,40 @@
+{
+    "model" : {
+        "min_input_size":       288,
+        "max_input_size":       448,
+        "anchors":              [17,38, 23,57, 23,45, 29,36, 29,66, 29,52, 32,87, 43,90, 44,52],
+        "labels":               ["0","1","2","3","4","5","6","7","8","9"]
+    },
+
+    "train": {
+        "train_image_folder":   "A:\\Infilect_project\\Product_detector\\Dataset\\ShelfImages\\train\\",
+        "train_annot_folder":   "A:\\Infilect_project\\Product_detector\\Dataset\\Annotations\\train\\",
+        "cache_name":           "product.pkl",
+
+        "train_times":          8,
+        "batch_size":           16,
+        "learning_rate":        1e-4,
+        "nb_epochs":            100,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0,1",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "logs",
+        "saved_weights_name":   "product.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "",
+        "valid_annot_folder":   "",
+        "cache_name":           "",
+
+        "valid_times":          1
+    }
+}

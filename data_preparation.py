@@ -40,7 +40,7 @@ def annotation_load(ann_dir, img_dir, labels=[]):
     seen_labels = {}
     for ann in sorted(os.listdir(ann_dir)):
         img = {'object':[]}
-        img["file_name"]=img_dir+os.path.basename(ann).split(".")[0]+".JPG"
+        img["filename"]=img_dir+os.path.basename(ann).split(".")[0]+".JPG"
         annotation_file = open(ann_dir+ann, "r")
         k=0
         obj = {}
@@ -49,7 +49,7 @@ def annotation_load(ann_dir, img_dir, labels=[]):
                 img['width'] = int(j.split()[0])
                 img["height"]= int(j.split()[1])
             else:
-                obj['name']=int(j.split()[0])
+                obj['name']=j.split()[0]
                 if obj['name'] in seen_labels:
                     seen_labels[obj['name']] += 1
                 else:
@@ -69,4 +69,4 @@ def annotation_load(ann_dir, img_dir, labels=[]):
     return all_insts,seen_labels
 
 # train_test_annotation_convert("A:\\Infilect_project\\Product_detector\\Dataset\\annotation.txt")
-# annotation_load("A:\\Infilect_project\\Product_detector\\Dataset\\Annotations\\train\\","A:\\Infilect_project\\Product_detector\\Dataset\\Annotations\\test\\")
+# all_insts,seen_labels=annotation_load("A:\\Infilect_project\\Product_detector\\Dataset\\Annotations\\train\\","A:\\Infilect_project\\Product_detector\\Dataset\\ShelfImages\\train\\",["0","1","2","3","4","5","6","7","8","9"])
