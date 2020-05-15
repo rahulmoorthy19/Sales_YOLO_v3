@@ -1,2 +1,5 @@
+test_array.npy
+train_array.npy
+test_label.npy
+train_label.npy
 __pycache__/
-backend.h5

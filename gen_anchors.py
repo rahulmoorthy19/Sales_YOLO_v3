@@ -91,11 +91,11 @@ def _main_(argv):
     with open(config_path) as config_buffer:
         config = json.loads(config_buffer.read())
 
-    train_imgs, train_labels = annotation_load(
-        config['train']['train_annot_folder'],
-        config['train']['train_image_folder'],
-        config['model']['labels']
+    train_imgs = annotation_load(
+        config['anchor_tuning_path']['train_annot_dir'],
+        config['anchor_tuning_path']['train_anchor_dir'],
     )
+
     # run k_mean to find the anchors
     annotation_dims = []
     for image in train_imgs:
@@ -111,6 +111,8 @@ def _main_(argv):
     # write anchors to file
     print('\naverage IOU for', num_anchors, 'anchors:', '%0.2f' % avg_IOU(annotation_dims, centroids))
     print_anchors(centroids)
+
+
 
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser()

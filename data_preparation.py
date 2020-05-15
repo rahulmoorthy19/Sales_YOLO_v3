@@ -66,7 +66,7 @@ def annotation_load(ann_dir, img_dir, labels=[]):
             if len(img['object']) > 0:
                 all_insts += [img]
             k=k+1
-    return all_insts,seen_labels
+    return all_insts
 
 # train_test_annotation_convert("A:\\Infilect_project\\Product_detector\\Dataset\\annotation.txt")
 # all_insts,seen_labels=annotation_load("A:\\Infilect_project\\Product_detector\\Dataset\\Annotations\\train\\","A:\\Infilect_project\\Product_detector\\Dataset\\ShelfImages\\train\\",["0","1","2","3","4","5","6","7","8","9"])
