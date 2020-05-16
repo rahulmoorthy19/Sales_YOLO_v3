@@ -5,9 +5,14 @@
 	},
 
 	"object_classifier_directory": {
-		"img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImagesFromShelves\\",
+		"img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImagesFromShelves",
 		"train_img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImagesFromShelves\\train",
-		"test_img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImagesFromShelves\\test"
+		"test_img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImagesFromShelves\\test",
+		"train_brand_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\BrandImagesFromShelves\\train",
+		"test_brand_dir" :"A:\\Infilect_project\\Product_detector\\Dataset\\BrandImagesFromShelves\\test",
+		"brand_img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\BrandImagesFromShelves",
+		"product_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImages\\",
+		"brand_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\BrandImages\\"
 	},
 
   "anchor_tuning_path": {
