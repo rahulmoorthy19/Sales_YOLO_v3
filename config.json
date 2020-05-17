@@ -12,7 +12,8 @@
 		"test_brand_dir" :"A:\\Infilect_project\\Product_detector\\Dataset\\BrandImagesFromShelves\\test",
 		"brand_img_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\BrandImagesFromShelves",
 		"product_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\ProductImages\\",
-		"brand_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\BrandImages\\"
+		"brand_dir": "A:\\Infilect_project\\Product_detector\\Dataset\\BrandImages\\",
+		"test_dir" : "A:\\Infilect_project\\Product_detector\\Dataset\\ShelfImages\\test\\"
 	},
 
   "anchor_tuning_path": {
